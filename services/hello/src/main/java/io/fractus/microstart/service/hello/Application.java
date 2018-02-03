@@ -1,6 +1,6 @@
 /**
  * 
- * Copyright (c) 2017 Fractus IT d.o.o. <http://fractus.io>
+ * Copyright (c) 2018 Fractus IT d.o.o. <http://fractus.io>
  * 
  */
 
