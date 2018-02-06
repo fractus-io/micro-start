@@ -5,14 +5,22 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <groupId>io.fractus.microstart</groupId>
-    <artifactId>micro-start</artifactId>
+    <artifactId>micro-start-services</artifactId>
 	<packaging>pom</packaging>
     <version>0.0.1</version>
-	<name>Micro Start </name>
+	<name>Micro Start Services Aggregator Module</name>
 
+	<parent>
+		<groupId>io.fractus.microstart</groupId>
+		<artifactId>micro-start-parent</artifactId>
+		<version>0.0.1</version>
+		<relativePath>../parent/pom.xml</relativePath>
+	</parent>
+	
+	
 	<modules>
-		<module>parent</module>
-		<module>services</module>		
+		<module>hello-service</module>		
 	</modules>
 
 </project>
+
