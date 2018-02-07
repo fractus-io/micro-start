@@ -3,7 +3,7 @@
  * Copyright (c) 2018 Fractus IT d.o.o. <http://fractus.io>
  * 
  */
-package io.fractus.microstart.service.hello;
+package io.fractus.microstart.services.hello;
 
 
 import org.springframework.web.bind.annotation.RestController;

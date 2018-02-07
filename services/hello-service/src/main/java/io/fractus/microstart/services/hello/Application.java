@@ -4,7 +4,7 @@
  * 
  */
 
-package io.fractus.microstart.service.hello;
+package io.fractus.microstart.services.hello;
 
 
 import org.springframework.boot.SpringApplication;
