@@ -4,27 +4,22 @@
     
 	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.fractus.microstart</groupId>
-    <artifactId>micro-start</artifactId>
+    <groupId>io.fractus.microstart.backing</groupId>
+    <artifactId>micro-start-backing</artifactId>
 	<packaging>pom</packaging>
     <version>0.0.1</version>
-	<name>Micro Start </name>
+	<name>Micro Start Backing Aggregator Module</name>
 
-	<prerequisites>
-        <maven>3.0</maven>
-    </prerequisites>
-
-   <parent>
+	<parent>
         <groupId>io.fractus.microstart</groupId>
         <artifactId>micro-start-parent-pom</artifactId>
-        <version>0.0.1</version>
-        <relativePath>./parent/pom.xml</relativePath>
-   </parent>
-   
+		<version>0.0.1</version>
+		<relativePath>../parent/pom.xml</relativePath>
+	</parent>
+	
 	<modules>
-		<module>parent</module>
-		<module>services</module>	
-		<module>backing</module>				
+		<module>discovery-service</module>	
+		<module>config-service</module>		
 	</modules>
 
 </project>
