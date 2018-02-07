@@ -10,6 +10,17 @@
     <version>0.0.1</version>
 	<name>Micro Start </name>
 
+	<prerequisites>
+        <maven>3.0</maven>
+    </prerequisites>
+
+   <parent>
+        <groupId>io.fractus.microstart</groupId>
+        <artifactId>micro-start-parent-pom</artifactId>
+        <version>0.0.1</version>
+        <relativePath>./parent/pom.xml</relativePath>
+   </parent>
+   
 	<modules>
 		<module>parent</module>
 		<module>services</module>		

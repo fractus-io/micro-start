@@ -4,15 +4,15 @@
     
 	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.fractus.microstart</groupId>
+    <groupId>io.fractus.microstart.services</groupId>
     <artifactId>micro-start-services</artifactId>
 	<packaging>pom</packaging>
     <version>0.0.1</version>
 	<name>Micro Start Services Aggregator Module</name>
 
 	<parent>
-		<groupId>io.fractus.microstart</groupId>
-		<artifactId>micro-start-parent</artifactId>
+        <groupId>io.fractus.microstart</groupId>
+        <artifactId>micro-start-parent-pom</artifactId>
 		<version>0.0.1</version>
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
@@ -23,4 +23,3 @@
 	</modules>
 
 </project>
-
