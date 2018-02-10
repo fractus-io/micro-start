@@ -32,11 +32,11 @@ spring.cloud.config.uri=http://localhost:8888
 
 The properties to configure the **Config Client** must be read in before the rest of the application’s configuration is read from the **Config Server**, during the bootstrap phase.
 
-We specify the client’s **spring.application.name** and the location of the Config Server **spring.cloud.config.uri**.
+We specify the client’s **spring.application.name** and the location of the **Config Server**, **spring.cloud.config.uri**.
 
 Now if we have property file with the same name as is the value of the **spring.application.name**,  inside **git** repo which is defined in **Config Service** property: **spring.cloud.config.server.git.uri**, then our **Config Client** will use values from that property file.
 
-Example, hello-service.properties file, under the **https://github.com/fractus-io/micro-start-config/blob/master/hello-service.properties**
+Example, **hello-service.properties** file, under the **https://github.com/fractus-io/micro-start-config/blob/master/hello-service.properties**
 ``` 
 message=Hallo
 ```
@@ -44,7 +44,7 @@ message=Hallo
 On the **Config Client** side we can get the property values via java code:
 
 ``` 
-	...
+    ...
     @Value("${message:Hello default}")
     private String message;
     ...
@@ -52,8 +52,5 @@ On the **Config Client** side we can get the property values via java code:
 
 or directly via curl:s
 ``` 
-	...
-    @Value("${message:Hello default}")
-    private String message;
-    ...
+$ curl http://localhost:8888/hello-service/default
 ```
