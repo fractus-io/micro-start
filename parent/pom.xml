@@ -5,7 +5,7 @@
 
     <groupId>io.fractus.microstart</groupId>
     <artifactId>micro-start-parent-pom</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-snapshot</version>
     <packaging>pom</packaging>
     
     <name>Micro Start - Platform Parent Pom</name>
@@ -72,6 +72,12 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+<!--
+		<repository>
+		  <id>maven-group</id>
+		  <url>http://192.168.72.142:8081/repository/maven-group/</url>
+		</repository>-->
+ 
     </repositories>
 
 	<dependencyManagement>
@@ -85,10 +91,17 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-	
-	<distributionManagement>
-
-	</distributionManagement>
+	<!--
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://192.168.72.142:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://192.168.72.142:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>-->
 
 	<pluginRepositories>
 
