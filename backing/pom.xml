@@ -7,19 +7,19 @@
     <groupId>io.fractus.microstart.backing</groupId>
     <artifactId>micro-start-backing</artifactId>
 	<packaging>pom</packaging>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 	<name>Micro Start Backing Aggregator Module</name>
 
 	<parent>
         <groupId>io.fractus.microstart</groupId>
         <artifactId>micro-start-parent-pom</artifactId>
-		<version>0.0.1</version>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 	
 	<modules>
 		<module>discovery-service</module>	
 		<module>config-service</module>		
-	</modules>
+	</modules> 
 
 </project>

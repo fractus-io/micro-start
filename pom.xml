@@ -7,7 +7,7 @@
     <groupId>io.fractus.microstart</groupId>
     <artifactId>micro-start</artifactId>
 	<packaging>pom</packaging>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 	<name>Micro Start </name>
 
 	<prerequisites>
@@ -17,14 +17,15 @@
    <parent>
         <groupId>io.fractus.microstart</groupId>
         <artifactId>micro-start-parent-pom</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>./parent/pom.xml</relativePath>
    </parent>
+   
    
 	<modules>
 		<module>parent</module>
 		<module>services</module>	
 		<module>backing</module>				
-	</modules>
+	</modules> 
 
 </project>
