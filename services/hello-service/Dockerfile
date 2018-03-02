@@ -11,4 +11,4 @@ EXPOSE 8080
 CMD java -jar /data/hello-service-0.0.1-SNAPSHOT.jar
 
 #copy hello service to docker image
-ADD ./target/hello-world-0.1.0.jar /data/hello-world-0.1.0.jar
+ADD ./target/hello-service-0.0.1-SNAPSHOT.jar /data/hello-service-0.0.1-SNAPSHOT.jar
