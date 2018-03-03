@@ -17,7 +17,7 @@ COPY config/logback.xml /opt/logback.xml
 COPY config/run.sh /opt/run.sh
 
 # give exe rights to the run.sh
-RUN /usr/bin/chmod 755 /opt/run.sh
+RUN chmod 755 /opt/run.sh
 
 # when docker image is started run.sh will be executed
 ENTRYPOINT ["/opt/run.sh"]
