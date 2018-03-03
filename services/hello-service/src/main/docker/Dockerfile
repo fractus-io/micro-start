@@ -8,13 +8,10 @@ MAINTAINER info@fractus.io
 EXPOSE 8080
 
 #copy hello service to docker image
-ADD hello-service-0.0.1-SNAPSHOT.jar /opt/hello-service-0.0.1-SNAPSHOT.jar
+RUN hello-service-0.0.1-SNAPSHOT.jar /opt/hello-service-0.0.1-SNAPSHOT.jar
 
 # create /op/config directory
 RUN mkdir /opt/config
-
-# exopose port 8080
-EXPOSE 8080
 
 # copy log configuration file from config folder to /opt/config/
 COPY config/logback.xml /opt/config/logback.xml
@@ -23,7 +20,7 @@ COPY config/logback.xml /opt/config/logback.xml
 COPY config/run.sh /opt/run.sh
 
 # give exe rights to the run.sh
-RUN  /usr/bin/chmod 755 /opt/run.sh
+RUN /usr/bin/chmod 755 /opt/run.sh
 
 # when docker image is started run.sh will be executed
 ENTRYPOINT ["/opt/run.sh"]
